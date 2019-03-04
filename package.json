@@ -1,4 +1,5 @@
-"name": "taskrunner",
+{
+  "name": "taskrunner",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",

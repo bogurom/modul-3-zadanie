@@ -1,6 +1,62 @@
+/* Variables */
 /* Global */
+/* .container, .container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 233px;
+  padding-right: 233px;
+} */
 body {
   margin: 0;
+}
+
+/* Navigation */
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.row-navigation {
+  position: relative;
+  margin: 0 233px;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+  color: #fed136;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #fff;
+  color: #fff;
 }
 
 /* Home */
@@ -12,6 +68,7 @@ body {
   -ms-flex-align: center;
       align-items: center;
   position: relative;
+  margin: 0;
   height: 100vh;
   background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
   background-size: cover;

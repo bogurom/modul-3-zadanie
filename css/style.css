@@ -1,25 +1,55 @@
 /* Variables */
 /* Global */
-/* .container, .container-fluid {
+.container, .container-fluid {
   margin-left: 0;
   margin-right: 0;
   padding-left: 233px;
   padding-right: 233px;
-} */
+}
+
 body {
   margin: 0;
+  padding: 0;
+}
+
+/* Home */
+.home {
+  position: relative;
+  margin: 0;
+  padding-top: 30px;
+  height: 100vh;
+  background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  z-index: -2;
+}
+
+.home::after {
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /* Navigation */
+.test {
+  border: 1px solid red;
+}
+
 .navigation {
   margin: 0;
   padding: 0;
-}
-
-.row-navigation {
   position: relative;
-  margin: 0 233px;
-  padding: 0;
+  border: 1px solid yellow;
 }
 
 .logo {
@@ -41,11 +71,16 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background: none;
 }
 
 .menu li {
   display: inline-block;
   margin: 0 40px 0 0;
+}
+
+.menu li:last-of-type {
+  margin: 0;
 }
 
 .menu li a {
@@ -59,46 +94,19 @@ body {
   color: #fff;
 }
 
-/* Home */
-.home {
+.home-welcome {
+  max-width: 844px;
+  margin: auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  position: relative;
-  margin: 0;
-  height: 100vh;
-  background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
-  color: #fff;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  z-index: -2;
 }
 
-.home ::after {
-  content: "";
-  background: #000;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.home-welcome {
-  max-width: 844px;
-  margin: auto;
-}
-
-.home-welcome h2 {
+.welcome-title {
   font-family: "Noto Serif JP", serif;
   font-family: 'Noto Serif JP', serif;
   font-size: 40px;
@@ -108,7 +116,7 @@ body {
   padding: 0;
 }
 
-.home-welcome h1 {
+.welcome-subtitle {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
@@ -134,4 +142,131 @@ body {
   cursor: pointer;
   transform: scale(1.2);
 }
+
+/*
+.home {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-text-light;
+  color: #fff;
+  font-family: $font-1;
+  font-family: 'Montserrat', sans-serif;
+  z-index: -2;
+}
+
+.home ::after {
+  content: "";
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+*/
+/* Navigation */
+/*
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.row-navigation {
+  position: relative;
+  margin: 0 233px;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  font-family: $font-logo;
+  font-family: 'Lobster', cursive;
+  font-size: 26px;
+  line-height: 41px;
+  color: $color-1;
+  color: #fed136;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: $font-1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: $color-text-light;
+  color: #fff;
+}
+
+
+
+
+.home-welcome {
+  max-width: 844px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  text-align: center;
+}
+
+.home-welcome h2 {
+  font-family: $font-2;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 0;
+ }
+
+.home-welcome h1 {
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1.88px;
+    margin: 0;
+    padding: 52px 0 59px 0;
+ }
+
+.home-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: $color-1;
+  background-color: #fed136;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 25px 50px;
+  margin: 0;
+}
+
+.home-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+ */
 /*# sourceMappingURL=style.css.map */

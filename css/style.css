@@ -12,6 +12,49 @@ body {
   padding: 0;
 }
 
+/* Typography */
+p {
+  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
+  color: #777;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  color: #222;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-family: "Noto Serif JP", serif;
+  font-family: 'Noto Serif JP', serif;
+  color: #777;
+  color: #777;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.section-title-small {
+  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  color: #222;
+  font-size: 18px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+}
+
 /* Home */
 .home {
   position: relative;

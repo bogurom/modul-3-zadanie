@@ -27,6 +27,50 @@ body {
   padding: 0;
 }
 
+/* Typography */
+
+p {
+  font-family: $font-body;
+  font-family: 'Roboto Slab', serif;
+  color: $color-text-gray;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.section-title {
+  font-family: $font-1;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-text-dark;
+  color: #222;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-family: $font-2;
+  font-family: 'Noto Serif JP', serif;
+  color: $color-text-gray;
+  color: #777;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.section-title-small {
+  font-family: $font-1;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-text-dark;
+  color: #222;
+  font-size: 18px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+}
+
 
 /* Home */
 

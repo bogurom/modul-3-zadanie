@@ -18,6 +18,10 @@ section {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Typography */
 p {
   font-family: "Roboto Slab", serif;
@@ -221,6 +225,83 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
+  background-color: #f7f7f7;
+}
+
+.portfolio-row {
+  border: 1px solid red;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  text-align: center;
+}
+
+.portfolio-row:first-of-type {
+  margin-top: 76px;
+  margin-bottom: 50px;
+}
+
+.portfolio col-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 291px;
+  border: 1px solid blue;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  border: 1px solid yellow;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url(../images/portfolio-1.png);
+}
+
+.img2 {
+  background-image: url(../images/portfolio-2.png);
+}
+
+.img3 {
+  background-image: url(../images/portfolio-3.png);
+}
+
+.img4 {
+  background-image: url(../images/portfolio-4.png);
+}
+
+.img5 {
+  background-image: url(../images/portfolio-5.png);
+}
+
+.img6 {
+  background-image: url(../images/portfolio-6.png);
+}
+
+.card-info {
+  background: #fff;
+  padding: 29px 0 27px 0;
+}
+
+.card-info .section-title-small {
+  padding: 0;
 }
 
 /*

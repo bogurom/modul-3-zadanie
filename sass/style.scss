@@ -94,7 +94,7 @@ p {
 .home {
   position: relative;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 40px;
   height: 100vh;
   background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
   background-size: cover;
@@ -118,24 +118,27 @@ p {
   z-index: -1;
 }
 
+/*.home-box {
+  position: relative;
+  border: 1px solid red;
+  height: 100%;
+}*/
+
 
 /* Navigation */
-
-.test {
-  border: 1px solid red;
-}
 
 .navigation {
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  align-content: space-between;
   border: 1px solid yellow;
 }
 
 
 .logo {
-  position: absolute;
-  left: 0;
+  /*position: absolute;
+  left: 0;*/
   font-family: $font-logo;
   font-family: 'Lobster', cursive;
   font-size: 26px;
@@ -144,11 +147,11 @@ p {
   color: #fed136;
   text-decoration: none;
   letter-spacing: 1.3px;
+  align-self: flex-start;
 }
 
 .menu {
-  position: absolute;
-  right: 0;
+  align-self: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -176,12 +179,17 @@ p {
 }
 
 .home-welcome {
-  max-width: 844px;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
 	align-items: center;
   text-align: center;
+  border: 1px solid red;
+}
+
+.home-welcome > div {
+  max-width: 844px;
+  border: 1px solid green;
 }
 
 .welcome-title {

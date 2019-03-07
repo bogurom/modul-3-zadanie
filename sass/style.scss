@@ -27,6 +27,12 @@ body {
   padding: 0;
 }
 
+section {
+  padding: 120px 0;
+  margin: 0;
+  text-align: center;
+}
+
 /* Typography */
 
 p {
@@ -37,6 +43,8 @@ p {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title {
@@ -45,10 +53,12 @@ p {
   color: $color-text-dark;
   color: #222;
   font-size: 40px;
-  line-height: 75px;
   font-weight: 700;
   letter-spacing: -1px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 19px;
 }
 
 .section-subtitle {
@@ -58,6 +68,8 @@ p {
   color: #777;
   font-size: 16px;
   font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title-small {
@@ -66,9 +78,10 @@ p {
   color: $color-text-dark;
   color: #222;
   font-size: 18px;
-  line-height: 75px;
   font-weight: 700;
   letter-spacing: -0.45px;
+  margin: 0;
+  padding: 0 0 15px 0;
 }
 
 
@@ -202,6 +215,32 @@ p {
 .home-button:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+
+/* Services */
+
+.services-row {
+  margin: 0;
+  padding: 80px 0 0 0;
+}
+
+.icon {
+  position: relative;
+  width: 68px;
+  height: 67px;
+  border-radius: 50%;
+  border: 3px solid $color-1;
+  border: 3px solid #fed136;
+  margin: 0 auto 27px auto;
+  padding: 0;
+}
+
+.icon img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 

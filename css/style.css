@@ -7,6 +7,8 @@
 
 .col-4 {
   padding: 0;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
 }
 
 body {
@@ -102,11 +104,10 @@ p {
   z-index: -1;
 }
 
-/*.home-box {
-  position: relative;
-  border: 1px solid red;
-  height: 100%;
-}*/
+.home .container {
+  z-index: 0;
+}
+
 /* Navigation */
 .navigation {
   margin: 0;
@@ -127,8 +128,6 @@ p {
 }
 
 .logo {
-  /*position: absolute;
-  left: 0;*/
   font-family: "Lobster", cursive;
   font-family: 'Lobster', cursive;
   font-size: 26px;
@@ -145,6 +144,8 @@ p {
   margin: 0;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .menu {
@@ -186,11 +187,14 @@ p {
       align-items: center;
   text-align: center;
   border: 1px solid red;
+  height: -webkit-fill-available;
 }
 
 .home-welcome > div {
   max-width: 844px;
   border: 1px solid green;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .welcome-title {
@@ -235,6 +239,8 @@ p {
   margin: 0;
   padding: 80px 0 0 0;
   border: 1px solid red;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .icon {
@@ -273,12 +279,6 @@ p {
 .portfolio-row:first-of-type {
   margin-top: 76px;
   margin-bottom: 50px;
-}
-
-.portfolio-row .col-4 {
-  padding: 0;
-  -ms-flex-preferred-size: 27%;
-      flex-basis: 27%;
 }
 
 .card {
@@ -354,15 +354,33 @@ footer {
       align-items: center;
 }
 
+.social-media {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border: 1px solid green;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.social-media .col-3 {
+  padding: 0;
+  margin: 0 9px 0 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.social-media .col-3:last-of-type {
+  margin: 0;
+}
+
 .social-media-circle {
   position: relative;
   font-size: 0;
-  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #222;
-  margin: 0 9px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -387,131 +405,4 @@ footer {
   margin: 0;
   padding: 0;
 }
-
-/*
-.home {
-  position: relative;
-  margin: 0;
-  height: 100vh;
-  background-image: url(https://i.postimg.cc/bwBJTqsG/Background-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $color-text-light;
-  color: #fff;
-  font-family: $font-1;
-  font-family: 'Montserrat', sans-serif;
-  z-index: -2;
-}
-
-.home ::after {
-  content: "";
-  background: #000;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-*/
-/* Navigation */
-/*
-.navigation {
-  margin: 0;
-  padding: 0;
-}
-
-.row-navigation {
-  position: relative;
-  margin: 0 233px;
-  padding: 0;
-}
-
-.logo {
-  position: absolute;
-  left: 0;
-  font-family: $font-logo;
-  font-family: 'Lobster', cursive;
-  font-size: 26px;
-  line-height: 41px;
-  color: $color-1;
-  color: #fed136;
-  text-decoration: none;
-  letter-spacing: 1.3px;
-}
-
-.menu {
-  position: absolute;
-  right: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 0 40px 0 0;
-}
-
-.menu li a {
-  text-decoration: none;
-  font-family: $font-1;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 41px;
-  text-transform: uppercase;
-  color: $color-text-light;
-  color: #fff;
-}
-
-
-
-
-.home-welcome {
-  max-width: 844px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-	align-items: center;
-  text-align: center;
-}
-
-.home-welcome h2 {
-  font-family: $font-2;
-  font-family: 'Noto Serif JP', serif;
-  font-size: 40px;
-  font-style: italic;
-  letter-spacing: -1px;
-  margin: 0;
-  padding: 0;
- }
-
-.home-welcome h1 {
-    font-size: 75px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1.88px;
-    margin: 0;
-    padding: 52px 0 59px 0;
- }
-
-.home-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: $color-1;
-  background-color: #fed136;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 25px 50px;
-  margin: 0;
-}
-
-.home-button:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
- */
 /*# sourceMappingURL=style.css.map */
